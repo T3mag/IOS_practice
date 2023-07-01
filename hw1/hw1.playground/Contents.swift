@@ -3,7 +3,7 @@ import UIKit
 
 var home = hw1()
 
-print(home.fibonacci(n: 1))
+print(home.fibonacci(n: 100))
 
 protocol HomeworkService {
     // Функция деления с остатком, должна вернуть в первой части результат деления, во второй части остаток.
@@ -97,17 +97,32 @@ protocol User
     func Return(item: LibraryItem)
 }
 
+protocol Item
+{
+    func Takeitem()
+    func Returnitem()
+}
+
 struct Author
 {
     let name: String
+    let age: Int
 }
 
 struct Number
 {
     let number: Int
+    let Circulation: Int
 }
 
-class LibraryItem
+struct People
+{
+    let Surname: String
+    let Name: String
+    let Age: Int
+}
+
+class LibraryItem: Item
 {
     var name: String
     private(set) var availability: Bool
@@ -182,7 +197,8 @@ class Film: LibraryItem
 {
     var durationInMinutes: Int
     
-    init(name: String, durationInMinutes: Int) {
+    init(name: String, durationInMinutes: Int)
+    {
         self.durationInMinutes = durationInMinutes
         super.init(n: name)
     }
@@ -194,14 +210,14 @@ class Film: LibraryItem
     }
 }
 
-class People: User
+class Reader: User
 {
-    var fio: String
+    var reader: People
     private(set) var ListOfLibraryObjects: [LibraryItem]
     
-    init(fio: String)
+    init(reader: People)
     {
-        self.fio = fio
+        self.reader = reader
         ListOfLibraryObjects = []
     }
     
