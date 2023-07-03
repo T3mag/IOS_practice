@@ -3,7 +3,7 @@ import UIKit
 
 var home = hw1()
 
-print(home.fibonacci(n: 100))
+print(home.fibonacci(n: 10))
 
 protocol HomeworkService {
     // Функция деления с остатком, должна вернуть в первой части результат деления, во второй части остаток.
@@ -112,14 +112,14 @@ struct Author
 struct Number
 {
     let number: Int
-    let Circulation: Int
+    let circulation: Int
 }
 
 struct People
 {
-    let Surname: String
-    let Name: String
-    let Age: Int
+    let surname: String
+    let name: String
+    let age: Int
 }
 
 class LibraryItem: Item
