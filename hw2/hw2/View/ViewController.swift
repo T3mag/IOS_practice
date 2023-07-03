@@ -16,21 +16,21 @@ class MainViewController: UIViewController {
     let number : String = ""
     let password: String = "AAAA"
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
+        passwordTextField.isSecureTextEntry = true
     }
     
     @IBAction func SignUp(_ sender: Any) {
         let number = loginTextFiled.text
         
-        if((number?.hasPrefix("8908"))! && passwordTextField.text == password){
+        if((number?.hasPrefix("8908"))! && passwordTextField.text == password) {
             guard let vc = storyboard?.instantiateViewController(withIdentifier: "ContactViewController") else {return}
             
             navigationController?.pushViewController(vc, animated: true)
-        }
-        else{
-            let errorvc = ErrorViewController()
-            present(errorvc, animated: true, completion: nil)
+        } else {
+            guard let vc = storyboard?.instantiateViewController(withIdentifier: "ErrorViewController") else {return}
+            present(vc, animated: true)
         }
     }
 }

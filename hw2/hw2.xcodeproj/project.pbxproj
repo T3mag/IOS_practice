@@ -16,8 +16,7 @@
 		14FDCDBD2A51ADC7001217A7 /* hw2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FDCDBC2A51ADC7001217A7 /* hw2Tests.swift */; };
 		14FDCDC72A51ADC7001217A7 /* hw2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FDCDC62A51ADC7001217A7 /* hw2UITests.swift */; };
 		14FDCDC92A51ADC7001217A7 /* hw2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FDCDC82A51ADC7001217A7 /* hw2UITestsLaunchTests.swift */; };
-		14FDCDD62A52CABD001217A7 /* ListTabelViewSell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FDCDD52A52CABD001217A7 /* ListTabelViewSell.swift */; };
-		14FDCDD82A52D079001217A7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FDCDD72A52D079001217A7 /* TableViewController.swift */; };
+		14FDCDD62A52CABD001217A7 /* ListTabelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FDCDD52A52CABD001217A7 /* ListTabelViewCell.swift */; };
 		14FDCDDA2A52DD84001217A7 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FDCDD92A52DD84001217A7 /* ContactViewController.swift */; };
 		14FDCDDC2A52DDDC001217A7 /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FDCDDB2A52DDDC001217A7 /* ErrorViewController.swift */; };
 /* End PBXBuildFile section */
@@ -53,8 +52,7 @@
 		14FDCDC22A51ADC7001217A7 /* hw2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hw2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14FDCDC62A51ADC7001217A7 /* hw2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hw2UITests.swift; sourceTree = "<group>"; };
 		14FDCDC82A51ADC7001217A7 /* hw2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hw2UITestsLaunchTests.swift; sourceTree = "<group>"; };
-		14FDCDD52A52CABD001217A7 /* ListTabelViewSell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTabelViewSell.swift; sourceTree = "<group>"; };
-		14FDCDD72A52D079001217A7 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		14FDCDD52A52CABD001217A7 /* ListTabelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTabelViewCell.swift; sourceTree = "<group>"; };
 		14FDCDD92A52DD84001217A7 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		14FDCDDB2A52DDDC001217A7 /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,17 +105,13 @@
 		14FDCDA42A51ADC5001217A7 /* hw2 */ = {
 			isa = PBXGroup;
 			children = (
+				14FDCDDD2A52FBB4001217A7 /* View */,
 				14FDCDA52A51ADC5001217A7 /* AppDelegate.swift */,
 				14FDCDA72A51ADC5001217A7 /* SceneDelegate.swift */,
-				14FDCDA92A51ADC5001217A7 /* ViewController.swift */,
 				14FDCDAB2A51ADC5001217A7 /* Main.storyboard */,
 				14FDCDAE2A51ADC7001217A7 /* Assets.xcassets */,
 				14FDCDB02A51ADC7001217A7 /* LaunchScreen.storyboard */,
 				14FDCDB32A51ADC7001217A7 /* Info.plist */,
-				14FDCDD52A52CABD001217A7 /* ListTabelViewSell.swift */,
-				14FDCDD72A52D079001217A7 /* TableViewController.swift */,
-				14FDCDD92A52DD84001217A7 /* ContactViewController.swift */,
-				14FDCDDB2A52DDDC001217A7 /* ErrorViewController.swift */,
 			);
 			path = hw2;
 			sourceTree = "<group>";
@@ -137,6 +131,17 @@
 				14FDCDC82A51ADC7001217A7 /* hw2UITestsLaunchTests.swift */,
 			);
 			path = hw2UITests;
+			sourceTree = "<group>";
+		};
+		14FDCDDD2A52FBB4001217A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				14FDCDA92A51ADC5001217A7 /* ViewController.swift */,
+				14FDCDD52A52CABD001217A7 /* ListTabelViewCell.swift */,
+				14FDCDD92A52DD84001217A7 /* ContactViewController.swift */,
+				14FDCDDB2A52DDDC001217A7 /* ErrorViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,9 +277,8 @@
 			files = (
 				14FDCDDC2A52DDDC001217A7 /* ErrorViewController.swift in Sources */,
 				14FDCDAA2A51ADC5001217A7 /* ViewController.swift in Sources */,
-				14FDCDD62A52CABD001217A7 /* ListTabelViewSell.swift in Sources */,
+				14FDCDD62A52CABD001217A7 /* ListTabelViewCell.swift in Sources */,
 				14FDCDA62A51ADC5001217A7 /* AppDelegate.swift in Sources */,
-				14FDCDD82A52D079001217A7 /* TableViewController.swift in Sources */,
 				14FDCDA82A51ADC5001217A7 /* SceneDelegate.swift in Sources */,
 				14FDCDDA2A52DD84001217A7 /* ContactViewController.swift in Sources */,
 			);

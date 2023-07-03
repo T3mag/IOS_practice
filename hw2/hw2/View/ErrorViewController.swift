@@ -7,8 +7,10 @@
 
 import UIKit
 
-final class ErrorViewController: UIViewController{
+class ErrorViewController: UIViewController{
+    @IBOutlet weak var TextLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        //view.backgroundColor = .systemBlue
     }
 }

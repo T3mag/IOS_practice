@@ -94,7 +94,7 @@
         <!--Error View Controller-->
         <scene sceneID="LVX-CM-oEc">
             <objects>
-                <viewController storyboardIdentifier="ErrorViewController" id="pFa-tp-mWh" customClass="ErrorViewController" customModule="hw2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ErrorViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pFa-tp-mWh" customClass="ErrorViewController" customModule="hw2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gju-Y3-dXh">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,6 +110,9 @@
                         <viewLayoutGuide key="safeArea" id="EZk-B1-mYI"/>
                         <color key="backgroundColor" systemColor="systemRedColor"/>
                     </view>
+                    <connections>
+                        <outlet property="TextLabel" destination="qud-P8-CjD" id="o4h-Du-ncq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yRP-RT-f0s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
